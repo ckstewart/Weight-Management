@@ -1,0 +1,250 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2585" measuredH="576" mockupW="2555" mockupH="576">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="549" y="0" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allBlack</bgPattern>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="568" y="102" w="231" h="392" measuredW="600" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/programs-weight-management.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::ButtonBar" x="568" y="102" w="-1" h="-1" measuredW="228" measuredH="22" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Cals./Calculator%2C%20Exercises/Cal.%20burn%2C%20Energy/Foods</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="638" y="118" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Commons%20Foods/Cals.</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="577" y="130" w="-1" h="-1" measuredW="25" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>13</size>
+        <text>Age</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="577" y="151" w="-1" h="-1" measuredW="47" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>13</size>
+        <text>Gender</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="577" y="172" w="-1" h="-1" measuredW="41" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Height</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="577" y="193" w="-1" h="-1" measuredW="43" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Weight</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::CheckBox" x="624" y="152" w="-1" h="-1" measuredW="42" measuredH="19" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Male</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::CheckBox" x="681" y="152" w="-1" h="-1" measuredW="53" measuredH="19" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Female</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::HSlider" x="608" y="135" w="151" h="-1" measuredW="33" measuredH="11" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="577" y="214" w="-1" h="-1" measuredW="59" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Activities</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::HSlider" x="624" y="177" w="122" h="-1" measuredW="33" measuredH="11" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HSlider" x="624" y="198" w="122" h="-1" measuredW="33" measuredH="11" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::ComboBox" x="638" y="220" w="161" h="-1" measuredW="120" measuredH="82" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>3355443</color>
+        <size>9</size>
+        <text>Basal%20Metabolic%28BMR%29%0ALittle/No%20exercise%0ALight%20Exercise/sports%201-3%20a%20wk%0AMedium%20Exercise/sports%203-5%20a%20wk%0AHeavy%20Exercise/sports%206-7%20a%20wk%0AExtra%20Heavy%20Exercise/sports%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::DataGrid" x="591" y="296" w="-1" h="-1" measuredW="199" measuredH="125" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <alternateRowColor>12303802</alternateRowColor>
+        <borderStyle>square</borderStyle>
+        <color>12303802</color>
+        <hasHeader>false</hasHeader>
+        <hLines>true</hLines>
+        <rowHeight>24</rowHeight>
+        <selectedIndex>1</selectedIndex>
+        <size>9</size>
+        <text>You%20need%202361%20Cal./day%20to%20maintain%20weight%0AYou%20need%201861%20Cal./day%20to%20lose%201%20lbs%20per%20wk%0AYou%20need%201361%20Cal./day%20to%20lose%202%20lbs%20per%20wk%0AYou%20need%202861%20Cal./day%20to%20gain%201%20lbs%20per%20wk%0AYou%20need%203361%20Cal./day%20to%20gain%202%20lbs%20per%20wk</text>
+        <vLines>true</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Arrow" x="344" y="229" w="160" h="10" measuredW="150" measuredH="100" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::iPhone" x="30" y="0" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Arrow" x="840" y="233" w="183" h="10" measuredW="150" measuredH="100" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::iPhone" x="1674" y="0" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Arrow" x="1453" y="229" w="179" h="10" measuredW="150" measuredH="100" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::iPhone" x="1115" y="3" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Image" x="54" y="101" w="229" h="394" measuredW="338" measuredH="208" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/Weight-Management-Plans3.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Paragraph" x="64" y="212" w="194" h="129" measuredW="275" measuredH="80" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>7880452</color>
+        <size>14</size>
+        <text>This%20app%20helps%20make%20you%20aware%20of%20the%20calories%20you%20are%20consuming%20on%20a%20daily%20basis.%20It%20helps%20you%20maintain%20a%20healthy%20balance%20to%20your%20diet.%20Whether%20it%27s%20losing%20weight%20or%20gaining%20weight.</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Button" x="109" y="436" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>545684</color>
+        <icon>angle-double-right%7Csmall</icon>
+        <state>focused</state>
+        <text>Continue</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::ButtonBar" x="1140" y="102" w="-1" h="-1" measuredW="228" measuredH="22" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <size>8</size>
+        <text>Cals./Calculator%2C%20Exercises/Cal.%20burn%2C%20Energy/Foods</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="1140" y="125" w="227" h="366" measuredW="250" measuredH="156" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/weight_management.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="1212" y="118" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Commons%20Foods/Cals.</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::DataGrid" x="1140" y="145" w="228" h="276" measuredW="256" measuredH="304" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <hLines>true</hLines>
+        <rowHeight>24</rowHeight>
+        <size>8</size>
+        <text>Activity%20%281%20hour%29%2C125%20lbs%20pers%2C155%20lbs%20pers%2C185%20lbs%20pers%0AGolf%20%28Using%20Cart%29%2C210%2C260%2C310%0AWalk%2C240%2C300%2C360%20%0AKayaking%2C300%2C370%2C440%0ASoftball/Baseball%2C300%2C370%2C440%20%0ASwimming%2C360%2C440%2C530%0ATennis%2C420%2C520%2C620%20%0ARunning%2C480%2C600%2C710%20%0ABicycling%2C480%2C600%2C710%0AFootball%2C480%2C600%2C710%0ABasketball%2C480%2C600%2C710%0A%20Soccer%2C480%2C600%2C710%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::ButtonBar" x="1701" y="102" w="-1" h="-1" measuredW="228" measuredH="22" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <size>8</size>
+        <text>Cals./Calculator%2C%20Exercises/Cal.%20burn%2C%20Energy/Foods</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::iPhone" x="2303" y="0" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Arrow" x="2055" y="229" w="165" h="10" measuredW="150" measuredH="100" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Image" x="1701" y="118" w="228" h="369" measuredW="601" measuredH="242" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/weight_management%2520%281%29.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Button" x="1769" y="119" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Commons%20Foods/Cals.</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::ButtonBar" x="2330" y="102" w="-1" h="-1" measuredW="228" measuredH="22" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>-1</selectedIndex>
+        <size>8</size>
+        <text>Cals./Calculator%2C%20Exercises/Cal.%20burn%2C%20Energy/Foods</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Image" x="2330" y="118" w="228" h="369" measuredW="930" measuredH="480" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/Sport-fitness-weight-management.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Button" x="2405" y="118" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <state>selected</state>
+        <text>Commons%20Foods/Cals.</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::DataGrid" x="1701" y="152" w="232" h="144" measuredW="255" measuredH="144" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hLines>true</hLines>
+        <rowHeight>16</rowHeight>
+        <size>8</size>
+        <text>Food%2CkJ%20g%2CCal.%20%28kcal%29g%2CkJ%20oz%2CCal.%20%28kcal%29%20oz%0AFat%2C37%2C8.8%2C1049%2C249%0AProteins%2C17%2C4.1%2C482%2C116%0ACarbohydrates%2C17%2C4.1%2C482%2C116%0AFiber%2C8%2C1.9%2C227%2C54%0A%28drinking%20alcohol%29%2C29%2C6.9%2C822%2C196%0AOrganic%20acids%2C13%2C3.1%2C369%2C88%0A%28sugar/alcohols%29%2C10%2C2.4%2C283%2C68%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::DataGrid" x="2330" y="142" w="227" h="340" measuredW="250" measuredH="608" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hLines>true</hLines>
+        <rowHeight>16</rowHeight>
+        <size>8</size>
+        <text>Food%2CSize%2CCalories%0AApple%2C1%20small%20%284%20oz.%29%2C80%0ABanana%2C1%20medium%20%286%20oz.%29%2C101%0AGrape%2Ceach%2C2%0AMango%2C1%20%288%20oz.%29%2C135%0AOrange%2C1%20%284%20oz.%29%2C71%0APear%2C%201%20%288%20oz.%29%2C100%0APeach%2C1%20%286%20oz.%29%2C38%0APineapple%2C1%20cup%2C80%0AStrawberry%2C1%20cup%2C53%0AWatermelon%2C1%20cup%2C45%0AAsparagus%2C1%20cup%2C36%0ABean%20curd%2C4%20oz.%2C81%0ABroccoli%2C1%20cup%2C40%0ACarrots%2C%091%20cup45%0ACucumber%2Ceach%2C30%0AEggplant%2C1%20cup-boiled%2C38%0ALettuce%2C%20%2C102%0ACaesar%20salad%2C1%20serving%20%283%20cups%29%2C360%0ACheeseburger%2C1%20%28McDonald%20Medium%29%2C360%0AChocolate%2C1%20oz.%2C150%0ACorn%2C1%20cup%2C140%0AHamburger%2C1%20%28McDonald%20Medium%29%2C280%0APizza%2C1%20slice%2C180%0APotato%20%28uncooked%29%2C1%20%286%20oz.%29%2C120%0ARice-cooked%2C1%20cup%2C225%0ASandwich%2C1%20%286%22%20Subway%29%2C310%0ABeer%2C1%20can%20or%20bottle%2C150%0ACoca-Cola%2C1%20cup%2C97%0ADiet%20Coke%2C1%20cup%2C3%0AMilk-low-fat%20%281%25%29%2C1%20cup%2C104%0AMilk-low-fat%20%282%25%29%2C1%20cup%2C121%0AMilk-whole%2C1%20cup%2C150%0AOJ/Apple%20C.%2C1%20cup%2C115%0AYogurt-low-fat%2C1%20cup%2C200%0AYogurt-non-fat%2C1%20cup%2C150%0A*%201%20cup%20%3D%20%7E250%20milliliters%2C%201%20table%20spoon%20%3D%2014.2%20gram%0A%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

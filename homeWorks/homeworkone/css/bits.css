@@ -1,0 +1,26 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+
+
+table,tr,td{
+    color:red;
+    border-color: red;
+    border: 1px solid red;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+th{
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    margin-left: 40%;
+    
+}
+mark{background-color: yellow;}

@@ -20,7 +20,7 @@ $(window).resize(function () {
 $(document).on("pageshow", function () {
   if ($('.ui-page-active').attr('id') ==
     "pageUserInfo") {
-    showUserForm();
+    //showUserForm();
   } else if ($('.ui-page-active').attr('id') ==
     "pageRecords") {
     loadUserInformation();

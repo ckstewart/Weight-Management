@@ -1,0 +1,29 @@
+body 
+{
+    background-image: url("mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    
+     
+} 
+
+table 
+{
+ background-color: darkgray;
+    border-radius: 25px;
+    text-align: center;
+    color: aliceblue; 
+}
+th
+{
+    height: 50px;
+}
+table tr td
+{
+    padding: 5px;
+}
+table tr th 
+{
+    padding-left: 10px;
+}

@@ -1,3 +1,4 @@
+
 $("#btnUserClear").click(function () {
   clearUserForm();
 });
@@ -18,17 +19,13 @@ function checkUserForm() { //Check for empty fields in the form
     month + '/' +
     (('' + date).length < 2 ? '0' : '') + date;
 
-  if (($("#txtFirstName").val() != "") &&
-    ($("#txtLastName").val() != "") &&
-    ($("#txtHealthCardNumber").val() != "") &&
-    ($("#datBirthdate").val() != "") && ($(
-      "#datBirthdate").val() <= currentDate) &&
-    ($("#slcCancerType option:selected").val() !=
-      "Select Cancer Type") &&
-    ($("#slcCancerStage option:selected").val() !=
-      "Select Cancer Stage") &&
-    ($("#slcTSHRange option:selected").val() !=
-      "Select TSH Range")) {
+  if (($("#gender").val() != "") &&
+    ($("#age").val() != "") &&
+    ($("#heightFt").val() != "") &&
+    ($("#heightIn").val() != "") && ($(
+      "#weight").val() <= currentDate) &&
+    ($("#act option:selected").val() !=
+      "Select Cancer Type")) {
     return true;
   } else {
     return false;
@@ -38,27 +35,29 @@ function checkUserForm() { //Check for empty fields in the form
 function saveUserForm() {
   if (checkUserForm()) {
     var user = {
-      "FirstName": $("#txtFirstName").val(),
-      "LastName": $("#txtLastName").val(),
-      "HealthCardNumber": $(
-        "#txtHealthCardNumber").val(),
-      "NewPassword": $("#changePassword").val(),
-      "DOB": $("#datBirthdate").val(),
-      "CancerType": $(
-        "#slcCancerType option:selected").val(),
-      "CancerStage": $(
-        "#slcCancerStage option:selected").val(),
-      "TSHRange": $(
-        "#slcTSHRange option:selected").val()
+      "Gender": $("#gender").val(),
+      "Age": $("#age").val(),
+      "HeightFt": $(
+        "#heightFt").val(),
+      "HeightIn": $("#heightIn").val(),
+      "Weight": $("#weight").val(),
+      "Activities": $(
+        "#act option:selected").val(),
+        
+      
     };
 
     try {
+        
+    
       localStorage.setItem("user", JSON.stringify(
         user));
       alert("Saving Information");
 
-      $.mobile.changePage("#pageMenu");
+     // $.mobile.changePage("#results");
+
       window.location.reload();
+        
     } catch (e) {
       /* Google browsers use different error 
        * constant
@@ -119,27 +118,13 @@ function showUserForm() { //Load the stored values in the form
   }
 
   if (user != null) {
-    $("#txtFirstName").val(user.FirstName);
-    $("#txtLastName").val(user.LastName);
-    $("#txtHealthCardNumber").val(user.HealthCardNumber);
-    $("#changePassword").val(user.NewPassword);
-    $("#datBirthdate").val(user.DOB);
-    $('#slcCancerType option[value=' + user.CancerType +
+    $("#gender").val(user.Gender);
+    $("#age").val(user.Age);
+    $("#heightFt").val(user.HeightFt);
+    $("#heightIn").val(user.HeightIn);
+    $("#weight").val(user.Weight);
+    $('#slcCancerType option[value=' + user.Activities +
       ']').attr('selected', 'selected');
-    $("#slcCancerType option:selected").val(
-      user.CancerType);
-    $('#slcCancerType').selectmenu('refresh',
-      true);
-    $('#slcCancerStage option[value=' + user.CancerStage +
-      ']').attr('selected', 'selected');
-    $("#slcCancerStage option:selected").val(
-      user.CancerStage);
-    $('#slcCancerStage').selectmenu('refresh',
-      true);
-    $('#slcTSHRange option[value=' + user.TSHRange +
-      ']').attr('selected', 'selected');
-    $("#slcTSHRange option:selected").val(user.TSHRange);
-    $('#slcTSHRange').selectmenu('refresh',
-      true);
+    
   }
 }

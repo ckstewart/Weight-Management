@@ -26,8 +26,8 @@ function setupCanvas() {
   var c = document.getElementById("GraphCanvas");
   var ctx = c.getContext("2d");
 
-  ctx.fillStyle = "#FFFFFF";
-  ctx.fillRect(0, 0, 500, 500);
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, 250, 200);
 
 }
 

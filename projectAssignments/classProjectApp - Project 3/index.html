@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <title>Weight Management Plans</title>
+
+  <!--Adjusting the page on mobile screen  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css"
+  />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/projectBackground.css" />
+  <script src="scripts/jquery-1.9.1.min.js"></script>
+  <script src="scripts/chromeFileProtocolFix.js"></script>
+  <script src="scripts/jquery.mobile-1.3.1.min.js"></script>
+    
+</head>
+
+<body>
+  <!-- Start of first page -->
+  <div data-role="page" id="pageHome">
+    <div data-role="header">
+      <h1>Weight Management Plans</h1>
+    </div>
+    <div data-role="content">
+        <br><br>
+      <h2 align="center">Welcome to the only app you will ever need to help you lose or gain weight</h2><br><br>
+        
+        <a href="#pageMenu" data-role="button">Continue</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Disclaimer Page -->
+  <div data-role="page" id="legalNotice" data-close-btn="none">
+    <div data-role="header">
+      <h1>Disclaimer</h1>
+    </div>
+    <div data-role="content">
+      [Insert Disclaimer Text Here]
+      <br>
+      <a href="#pageUserInfo" id="noticeYes" data-role="button"
+      data-icon="forward" data-mini="false">Yes</a>
+    </div>
+  </div>
+
+  <!--About Page -->
+  <div data-role="page" id="pageAbout">
+    <div data-role="header">
+      <a href="#pageHome" data-role="button" data-icon="bars"
+      data-iconpos="left">Home</a>
+      <h1>Info</h1>
+    </div>
+    <div data-role="content" align="center"><br><br>
+        <b>This app helps make you aware of the calories you are consuming on a daily basis.<br> It helps you maintain a healthy balance to your diet.<br> Whether its losing weight or gaining weight this app is for you.</b>
+    </div>
+  </div>
+
+  <!--User Information Page/Form -->
+  <div data-role="page" id="pageUserInfo">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Cals/Calculator</h1>
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+      <form id="frmUserForm3" action="#pageUserInfo">
+        <div data-role="fieldcontain">
+          <label></label>
+            <div class="panel panel-success">
+      <div class="panel-heading" style="background-color:white;">
+        <h3 class="panel-title" align="center">BMR</h3>
+          <h3>BMR for Female</h3>
+          <p id="bmrw">0</p>
+          <h3>BMR for Male</h3>
+          <p id="bmrm">0</p>
+      </div>
+      
+    </div>
+          
+        </div>
+          <div data-role="fieldcontain" align="center">
+          <label>Gender</label>
+            <table>
+                <tr>
+                    <th></th><th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="gender" name="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  
+</select>                     
+                    </td>
+                </tr>
+            </table>
+              <br>
+          
+            
+          
+          
+        </div>
+          <div data-role="fieldcontain">
+          <label>Age: </label>
+          <input type="range" placeholder="18" name="age" min="15" max="100"
+          data-mini="false" id="age" value=""
+          required>
+        </div>
+        
+          
+        <div data-role="fieldcontain">
+          <label>Height: </label>
+          <input type="range" name="heightFt" data-mini="false" id="heightFt" value="" placeholder="ft" min="3" max="7" required><br>
+          <input type="range" name="heightIn" data-mini="false" id="heightIn" value="" placeholder="in" min="0" max="11" required>
+        </div>
+        <div data-role="fieldcontain">
+          <label>Weight: </label>
+          <input type="range" placeholder="170lb" name="weight"
+          data-mini="false" id="weight" value="" min="60" max="500"
+          required>
+        </div>
+        <div data-role="fieldcontain">
+          <label>Activities: </label>
+          <select id="act">
+  <option value="1">Little/No exercise</option>
+  <option value="2">Light Exercise/sports 1-3 a wk</option>
+  <option value="3">Medium Exercise/sports 3-5 a wk</option>
+  <option value="4">Heavy Exercise/Sports 6-7 a wk</option>
+  <option value="5">Extra Heavy Exercise/sports</option>
+</select>
+        </div>
+      
+        <input type="submit" onclick="setvar();" id="btnUserUpdate1" data-icon="check"
+        data-iconpos="left" value="Submit" data-inline="true">
+      </form>
+    </div>
+  </div>
+    
+    <div data-role="page" id="pageUserInfo2">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Excercise/ Cal. burn</h1>
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+        <br><br>
+        <table border="1px" style="margin-left:auto;margin-right:auto;">
+            <tr><th>Excercise</th><th>125lb Person</th><th>155lb Person</th><th>185lb Person</th></tr>
+            <tr><td>Walking</td><td> 240 calories</td><td> 300 calories</td><td> 360 calories</td></tr>
+            <tr><td>Running</td><td> 480 calories</td><td>600 calories</td><td> 710 calories</td></tr>
+            <tr><td>Swimming</td><td> 360 calories</td><td>440 calories</td><td> 530 calories</td></tr>
+            <tr><td>Bicycling</td><td> 480 calories</td><td>600 calories</td><td> 710 calories</td></tr>
+            <tr><td>Football</td><td> 480 calories</td><td>600 calories</td><td> 710 calories</td></tr>
+            <tr><td>Basketball</td><td> 480 calories</td><td>600 calories</td> <td>710 calories</td></tr>
+            <tr><td>Soccer</td><td> 480 calories</td><td>600 calories</td><td> 710 calories</td></tr>
+            <tr><td>Tennis</td><td> 420 calories</td><td>520 calories</td><td> 620 calories</td></tr>
+            <tr><td>Kayaking</td><td> 300 calories</td><td>370 calories</td><td> 440 calories</td></tr>
+            <tr><td>Golfing</td><td> 210 calories</td><td>260 calories</td><td> 310 calories</td></tr>
+            <tr><td>Baseball</td><td> 300 calories</td><td>370 calories</td><td> 440 calories</td></tr>
+        </table>
+        
+    </div>
+  </div>
+    
+    <div data-role="page" id="pageUserInfo3">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Common Foods/Cals</h1>
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+      <br><br>
+        <table border="1px" style="margin-left:auto;margin-right:auto;">
+            <tr><th>Food</th><th>Portion</th><th>Calories</th></tr>
+            <tr><td>Chicken</td><td> 2 oz</td><td>95 calories</td></tr>
+            <tr><td>Beef</td><td> 2 oz</td><td>120 calories</td></tr>
+            <tr><td>Fish</td><td> 2 oz</td><td>80 calories</td></tr>
+            <tr><td>Pork</td><td> 2 oz</td><td>130 calories</td></tr>
+            <tr><td>Ceasar Salad</td><td> 3 cups</td><td>360 calories</td></tr>
+            <tr><td>Cheeseburger</td><td> Med</td><td>360 calories</td></tr>
+            <tr><td>Pizza</td><td> 1 slice</td><td>180 calories</td></tr>
+            <tr><td>Shrimp</td><td> 2 oz</td><td>70 calories</td></tr>
+            <tr><td>Potato</td><td> 6 oz</td><td>120 calories</td></tr>
+            <tr><td>Apple</td><td> 4 oz</td><td>80 calories</td></tr>
+            <tr><td>Banana</td><td> 6 oz</td><td>101 calories</td></tr>
+        </table>
+        
+        <a href="https://whatscookingamerica.net/NutritionalChart.htm">Click here for more foods
+    </div>
+  </div>
+    
+    <div data-role="page" id="pageUserInfo4">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Energy/Foods</h1>
+    </div>
+    <!-- /header -->
+    <div data-role="content">
+      <br><br>
+        <table border="1px" style="margin-left:auto;margin-right:auto;">
+            <tr><th>Type</th><th>Cal per gram</th><th>Cal per ounce</th></tr>
+            <tr><td>Fat</td><td> 8.8 calories</td><td>249 calories</td></tr>
+            <tr><td>Proteins</td><td> 4.1 calories</td><td>116 calories</td></tr>
+            <tr><td>Carbohydrates</td><td> 4.1 calories</td><td>116 calories</td></tr>
+            <tr><td>Fiber</td><td> 1.9 calories</td><td>54 calories</td></tr>
+            <tr><td>Ethanol (drinking Alcohol)</td><td> 6.9 calories</td><td>196 calories</td></tr>
+            <tr><td>Organic Acids</td><td> 3.1 calories</td><td>88 calories</td></tr>
+            <tr><td>Polyols (sugar alcohols,sweeteners)</td><td> 2.4 calories</td><td>68 calories</td></tr>
+            
+        </table>
+    </div>
+  </div>
+
+  <!-- Menu page -->
+  <div data-role="page" id="pageMenu">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Weight Management Plans</h1>
+    </div>
+    <div data-role="content">
+      <div data-role="controlgroup">
+        <a href="#pageUserInfo" data-role="button">Cals/Calculator</a>
+        <a href="#pageUserInfo2" data-role="button">Excercises</a>
+        <a href="#pageUserInfo3" data-role="button">Common Foods/Cals</a>
+        <a href="#pageUserInfo4" data-role="button">Energy/Foods</a>
+       <!-- <a href="#pageGraph" data-role="button">Graph</a>
+        <a href="#pageAdvice" data-role="button">Suggestions</a> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Records page -->
+  <div data-role="page" id="pageRecords">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Records</h1>
+    </div>
+    <div data-role="content">
+      <!-- User's Information Section -->
+      <div data-role="fieldcontain" id="divUserSection">
+      </div>
+      <h3 align="center">History</h3>
+      <div data-role="fieldcontain">
+        <!-- Records Table -->
+        <table id="tblRecords" class="ui-responsive table-stroke">
+        </table>
+      </div>
+      <div data-role="fieldcontain">
+        <a href="#pageNewRecordForm" id="btnAddRecord" data-role="button"
+        data-icon="plus">Add New Entry</a>
+        <a href="#" data-role="button" id="btnClearHistory"
+        data-icon="delete">Clear History</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Record Form page -->
+  <div data-role="page" id="pageNewRecordForm">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>New Record</h1>
+    </div>
+    <div data-role="content">
+      <form id="frmNewRecordForm" action="">
+        <div data-role="fieldcontain">
+          <div data-role="fieldcontain">
+            <label for="datExamDate">Date: </label>
+            <input type="date" name="datExamDate" data-mini="false"
+            id="datExamDate" value="">
+          </div>
+          <div data-role="fieldcontain">
+            <label for="txtTSH"><abbr title="Thyroid-stimulating hormone">TSH (mIU/L): </abbr>
+            </label>
+            <input type="number" step="0.01" placeholder="0" name="txtTSH"
+            data-mini="false" id="txtTSH" value="">
+          </div>
+          <div data-role="fieldcontain">
+            <label for="txtThyroglobulin">Thyroglobulin (µg/L)[Optional]: </label>
+            <input type="number" step="0.01" placeholder="0" name="txtThyroglobulin"
+            data-mini="false" id="txtThyroglobulin"
+            value="">
+          </div>
+          <div data-role="fieldcontain">
+            <label for="txtSynthroidDose"><abbr title="Synthroid or Eltroxin">Synthroid*(µg): </abbr>
+            </label>
+            <input type="number" step="0.01" placeholder="0" name="txtSynthroidDose"
+            data-mini="false" id="txtSynthroidDose"
+            value="">
+          </div>
+        </div>
+        <input type="submit" id="btnSubmitRecord" value="">
+      </form>
+    </div>
+    <p>&nbsp;&nbsp;100 microgram = .0001 gram</p>
+  </div>
+
+
+  <!--Graph Page -->
+  <div data-role="page" id="results" class="test">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Analyze</h1>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">BMR</h3>
+      </div>
+      <div class="panel-body">
+        <canvas id="GraphCanvas" width="250" height="200" style="border:1px solid #000000;">
+        </canvas>
+      </div>
+    </div>
+      
+      <div data-role="content">
+          <h3>BMR for Female</h3>
+          <p id="bmrw"></p>
+          <h3>BMR for Male</h3>
+          <p id="bmrm"></p>
+          
+          
+    </div>
+      
+      
+  </div>
+
+  <!--Advice Page -->
+  <div data-role="page" id="pageAdvice">
+    <div data-role="header">
+      <a href="#pageMenu" data-role="button" data-icon="bars"
+      data-iconpos="left" data-inline="true">Menu</a>
+      <a href="#pageAbout" data-role="button" data-icon="info"
+      data-iconpos="right" data-inline="true">Info</a>
+      <h1>Suggestions</h1>
+    </div>
+    <div data-role="content">
+      <canvas id="AdviceCanvas" width="550" height="550"
+      style="border:1px solid #000000;">
+      </canvas>
+    </div>
+  </div>
+
+  <!--Custom Javascript/Jquery -->
+  <script src="scripts/RGraph.common.core.js"></script>
+  <script src="scripts/RGraph.common.effects.js"></script>
+  <script src="scripts/RGraph.line.js"></script>
+  <script src="scripts/RGraph.cornergauge.js"></script>
+  <script src="scripts/RGraph.hprogress.js"></script>
+
+  <script src="scripts/UserForm.js"> var heightFt = 7; </script>
+  <script src="scripts/Table.js"></script>
+  <script src="scripts/Navigation.js"></script>
+  <script src="scripts/Advice.js"></script>
+  <script src="scripts/GraphAnimate.js"></script>
+  <script src="scripts/pageLoader.js"></script>
+    
+    <script>
+        
+        
+        
+        
+        var sex;
+        var heightFt = document.getElementById("heightFt").value;
+        var heightIn;
+        var heightTotal = heightFt * 12;
+        var weight = 230;
+        var age = 29;
+         var bmrm;
+        var bmrw;
+        var brms = 2;
+        var womantotal;
+        var mantotal;
+        var act;
+        
+        
+        function setvar(){
+            sex=document.getElementById("gender").value;
+            heightFt=document.getElementById("heightFt").value;
+            heightIn=document.getElementById("heightIn").value;
+            weight=document.getElementById("weight").value;
+            age=document.getElementById("age").value;
+            bmrw = (4.7 * heightTotal)+(4.35 * weight)-(4.7 * age) + 66;
+            bmrm = (12.7 * heightTotal)+(6.23 * weight)-(6.8 * age) + 66;
+            act=document.getElementById("act").value;
+            
+            if (act == 1){ mantotal = bmrm * 1.2;  }
+            if (act == 2){mantotal = bmrm * 1.375; }
+            if (act == 3){mantotal = bmrm * 1.55; }
+            if (act == 4){mantotal = bmrm * 1.725; }
+            if (act == 5){mantotal = bmrm * 1.9; } 
+            
+            if (act == 1){womantotal = bmrw * 1.2;}
+            if (act == 2){womantotal = bmrw * 1.375;}
+            if (act == 3){womantotal = bmrw * 1.55;}
+            if (act == 4){womantotal = bmrw * 1.725;}
+            if (act == 5){womantotal = bmrw * 1.9;}
+            
+            
+            
+            //alert(bmrm);
+             document.getElementById("bmrw").innerHTML=womantotal;
+            document.getElementById("bmrm").innerHTML=mantotal;
+            
+            return true;}
+        
+       
+        //prompt(age);
+        
+        
+        
+       
+       
+               
+           
+        
+            
+        
+    
+    </script>
+</body>
+
+</html>
